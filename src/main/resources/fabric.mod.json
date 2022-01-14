@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "gouache",
+  "version": "${version}",
+  "name": "Gouache",
+  "description": "Replaces the Painting item with individual items, and makes paintings spawn in loot chests.",
+  "authors": [
+    "Tomat",
+    "RiverOaken"
+  ],
+  "contact": {
+    "website": "https://tomat.dev/projects/mc/gouache",
+    "repo": "https://github.com/Steviegt6/gouache"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.tomat.gouache.Gouache"
+    ]
+  },
+  "mixins": [
+    "gouache.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
