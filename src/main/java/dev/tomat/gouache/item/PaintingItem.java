@@ -1,10 +1,7 @@
 package dev.tomat.gouache.item;
 
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.decoration.AbstractDecorationEntity;
-import net.minecraft.entity.decoration.GlowItemFrameEntity;
-import net.minecraft.entity.decoration.ItemFrameEntity;
 import net.minecraft.entity.decoration.painting.PaintingEntity;
 import net.minecraft.entity.decoration.painting.PaintingMotive;
 import net.minecraft.entity.player.PlayerEntity;
@@ -63,7 +60,7 @@ public class PaintingItem extends DecorationItem {
 
             return ActionResult.success(world.isClient);
         }
-        
+
         return ActionResult.CONSUME;
     }
 }
