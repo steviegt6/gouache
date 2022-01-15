@@ -82,7 +82,7 @@ public final class Registrar {
     }
 
     public static Item resovlvePainting(String name) {
-        String realName = new Identifier(name).getPath().toUpperCase() + "_ITEM";
+        String realName = name + "_item";
 
         if (PAINTING_ITEMS.containsKey(realName))
             return PAINTING_ITEMS.get(realName);
@@ -91,7 +91,7 @@ public final class Registrar {
     }
 
     private static void quickRegI(String name, PaintingItem item) {
-        PAINTING_ITEMS.put(name, item);
+        PAINTING_ITEMS.put("minecraft:" + name.toLowerCase(), item);
         regI(new Identifier("gouache", name.toLowerCase()).toString(), item);
     }
 
