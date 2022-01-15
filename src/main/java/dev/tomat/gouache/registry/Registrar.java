@@ -81,7 +81,7 @@ public final class Registrar {
         quickRegI("WITHER_ITEM", WITHER_ITEM);
     }
 
-    public static Item resovlvePainting(String name) {
+    public static Item resolvePainting(String name) {
         String realName = name + "_item";
 
         if (PAINTING_ITEMS.containsKey(realName))

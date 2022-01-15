@@ -43,7 +43,7 @@ public abstract class PaintingDropReplacementMixin extends AbstractDecorationEnt
             }
         }
 
-        this.dropItem(Registrar.resovlvePainting(Registry.PAINTING_MOTIVE.getId(motive).toString()));
+        this.dropItem(Registrar.resolvePainting(Registry.PAINTING_MOTIVE.getId(motive).toString()));
     }
 
     /**
@@ -52,6 +52,6 @@ public abstract class PaintingDropReplacementMixin extends AbstractDecorationEnt
      */
     @Overwrite
     public ItemStack getPickBlockStack() {
-        return new ItemStack(Registrar.resovlvePainting(Registry.PAINTING_MOTIVE.getId(motive).toString()));
+        return new ItemStack(Registrar.resolvePainting(Registry.PAINTING_MOTIVE.getId(motive).toString()));
     }
 }

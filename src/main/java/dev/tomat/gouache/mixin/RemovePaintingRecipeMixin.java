@@ -2,7 +2,6 @@ package dev.tomat.gouache.mixin;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.resource.JsonDataLoader;
 import net.minecraft.resource.ResourceManager;
