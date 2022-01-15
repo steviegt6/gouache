@@ -8,6 +8,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Rarity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
@@ -17,7 +18,7 @@ public class PaintingItem extends DecorationItem {
     private final PaintingMotive motive;
 
     public PaintingItem(PaintingMotive motive) {
-        super(EntityType.PAINTING, new Item.Settings().group(ItemGroup.DECORATIONS));
+        super(EntityType.PAINTING, new Item.Settings().group(ItemGroup.DECORATIONS).rarity(Rarity.UNCOMMON));
 
         this.motive = motive;
     }
